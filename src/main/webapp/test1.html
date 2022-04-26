@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_text_link
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/26
+  Time(创建时间)： 18:38
+  Description(描述)：
+
+  参数	说明	类型	可选值	默认值
+type	类型	string	primary / success / warning / danger / info	default
+underline	是否下划线	boolean	—	true
+disabled	是否禁用状态	boolean	—	false
+href	原生 href 属性	string	—	-
+icon	图标类名	string	—
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+    <style>
+        .link {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <el-link class="link" href="#">默认连接</el-link>
+    <br>
+    <el-link class="link" href="#" type="primary">主要连接</el-link>
+    <br>
+    <el-link class="link" href="#" type="success">成功连接</el-link>
+    <br>
+    <el-link class="link" href="#" type="info">信息连接</el-link>
+    <br>
+    <el-link class="link" href="#" type="warning">警告连接</el-link>
+    <br>
+    <el-link class="link" href="#" type="danger">危险连接</el-link>
+    <br>
+    <br>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+    })
+</script>
+
+</body>
+</html>
