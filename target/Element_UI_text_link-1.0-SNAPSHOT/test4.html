@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_text_link
+  File name(文件名): test4
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/26
+  Time(创建时间)： 19:01
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+    <style>
+        .link {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <el-link class="link" icon="el-icon-edit">编辑</el-link>
+        <br>
+        <el-link class="link">查看<i class="el-icon-view el-icon--right"></i></el-link>
+        <br>
+        <el-link type="success" class="link" icon="el-icon-edit">编辑</el-link>
+        <br>
+        <el-link type="primary" class="link">查看<i class="el-icon-view el-icon--right"></i></el-link>
+    </div>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+    })
+</script>
+
+</body>
+</html>
